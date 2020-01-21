@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "StardosStencil";
+  src: local("StardosStencil"),
+    url(./fonts/StardosStencil-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: local("DINPro"), url(./fonts/DINPro.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: local("DINOT"), url(./fonts/DINOT-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DINOT-Bold";
+  src: local("DINOT-Bold"), url(./fonts/DINOT-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Stencil Std";
+  src: local("Stencil Std"),
+    url(./fonts/Stencil-Std-Bold.ttf) format("truetype");
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-family: "DINPro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.MuiInput-underline {
+  display: none;
+}
+.MuiInput-underline:before {
+  display: none;
+}
+.MuiInput-underline:after {
+  display: none;
+}
+.MuiInputLabel-formControl {
+  top: 10px !important;
+  left: 15px !important;
+  font-size: 13px !important;
+}
+.MuiInputLabel-shrink {
+  transform: translate(0, 5px) scale(0.75) !important;
+}
+.MuiSelect-select:focus {
+  background-color: transparent !important;
+}
+.step1__select {
+  width: 305px !important;
+}
+.step1__select > div {
+  width: 305px !important;
+}
+.step1__select select {
+  padding: 10px 81px 12px 15px !important;
+}
+
+@media (max-width: 420px) {
+  .step1__select {
+    width: 100% !important;
+  }
+  .step1__select > div {
+    width: 100% !important;
+  }
+  .step1__select select {
+    padding: 0px 20px 0px 15px !important;
+  }
+}
+
+@-moz-document url-prefix() {
+  .step2_option_card {
+    letter-spacing: -1.5px !important;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .receipt_wrapper_safari_only {
+    position: -webkit-sticky;
+  }
+}
